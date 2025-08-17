@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct CategoryRow: View {
-    let width: CGFloat
-    let height: CGFloat
     
     var body: some View {
-        VStack {
+        ZStack {
+            Consts.Colors.primaryGray.color
             
+            VStack {
+                Text("123")
+            }
         }
-        .frame(width: width, height: height)
-        .background(Consts.Colors.primaryGray.color)
-        .cornerRadius(10)
+        .cornerRadius(12)
     }
 }
 
 #Preview {
-    CategoryRow(width: 100, height: 200)
+    CategoryRow()
 }
